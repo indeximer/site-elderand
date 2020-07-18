@@ -1,0 +1,84 @@
+.about-banner{
+    position: relative;
+    .form-main{
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translate(0, -50%);
+    }
+    .text{
+        position: relative;
+        .text-wrapper{
+            position: absolute;
+            top: 265px;
+        }
+        .title{
+            font-size: 60px;
+        }
+        @media screen and (max-width: 992px){
+            .text-wrapper{
+                top: 30px;
+            }
+            .title{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.about-tabs{
+    border-bottom: solid 1px $blue-5;
+    .my-tabs{
+        padding: 15px;
+        border-right: solid 1px $blue-5;
+        &:first-child{
+            border-left: solid 1px $blue-5;
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+        &.active{
+            background-color: $blue-6;
+        }
+    }
+}
+
+.about-tabs-content{
+    background-image: url('../img/a-inova/a-inova-bg-missao-visao-valores.png');
+    background-repeat: no-repeat;
+    background-color: $blue-6;
+    background-position: center top;
+}
+
+.about-accordion{
+    background-color: $blue-3;
+    .accordion{
+        padding: 0;
+        border-top: solid 1px $blue-5;
+        .title{
+            padding: 15px;
+            border-bottom: solid 1px $blue-5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            i{
+                margin-left: 5px;
+                transition: all 0.3s ease;
+                display: inline-flex;
+            }
+            &.active{
+                i{
+                    transform: rotate(180deg);
+                }
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        .collapse{
+            background-color:  $blue-5;
+            padding: 15px 15px 5px 15px;
+            background-color: $blue-6 ;
+        }
+    }
+}

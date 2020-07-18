@@ -1,0 +1,30 @@
+plugin:
+    name: 'elderand.landingpage::lang.plugin.name'
+    description: 'elderand.landingpage::lang.plugin.description'
+    author: Elderand
+    icon: oc-icon-gamepad
+    homepage: ''
+navigation:
+    content-manager:
+        label: 'elderand.landingpage::lang.content_manager'
+        url: elderand/landingpage/home/preview/1
+        icon: icon-edit
+        sideMenu:
+            home_content:
+                label: 'elderand.landingpage::lang.home_content'
+                url: elderand/landingpage/home/preview/1
+                icon: icon-home
+            social-menu:
+                label: Social
+                url: elderand/landingpage/social
+                icon: icon-share-alt-square
+            menus:
+                label: Menus
+                url: elderand/landingpage/menus
+                icon: icon-bars
+                permissions:
+                    - manage_menus
+permissions:
+    manage_menus:
+        tab: Menu
+        label: 'Manage Menus'

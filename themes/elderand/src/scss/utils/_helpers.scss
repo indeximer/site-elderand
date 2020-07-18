@@ -1,0 +1,38 @@
+/* BG's */
+.bg-white{background-color: $white;}
+.bg-grey-1{background-color: $grey-1;}
+.bg-grey-3{background-color: $grey-3;}
+.bg-blue-2{background-color: $blue-2;}
+.bg-blue-3{background-color: $blue-3;}
+/* /end BG's */
+
+/* PADDINGS & MARGINS */
+.pt-80{padding-top: 80px;}
+.pb-80{padding-bottom: 80px;}
+.pt-60{padding-top: 60px;}
+.pt-30{padding-top: 30px;}
+.pb-50{padding-bottom: 50px;}
+.pb-60{padding-bottom: 60px;}
+.pb-30{padding-bottom: 30px;}
+
+.mt-40{margin-top: 40px;}
+.mt-30{margin-top: 30px;}
+.mt-20{margin-top: 20px;}
+.mb-10{margin-bottom: 10px;}
+.mb-15{margin-bottom: 15px;}
+.mb-20{margin-bottom: 20px;}
+.mb-30{margin-bottom: 30px;}
+.mb-40{margin-bottom: 40px;}
+.mb-50{margin-bottom: 50px;}
+@media screen and (max-width: 992px){
+    .pt-80{padding-top: 30px;}
+    .pb-80{padding-bottom: 30px;}
+    .pt-60{padding-top: 30px;}
+    .pb-50{padding-bottom: 30px;}
+    .pb-60{padding-bottom: 30px;}
+
+    .mt-40{margin-top: 30px;}
+    .mb-40{margin-bottom: 30px;}
+    .mb-50{margin-bottom: 30px;}
+}
+/* /end PADDINGS & MARGINS */

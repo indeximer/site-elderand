@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table elderand_landingpage_home'
+    - builder_table_create_elderand_landingpage_home.php
+1.0.3:
+    - 'Created table elderand_landingpage_social'
+    - builder_table_create_elderand_landingpage_social.php
+1.0.4:
+    - 'Updated table elderand_landingpage_social'
+    - builder_table_update_elderand_landingpage_social.php
+1.0.5:
+    - 'Created table elderand_landingpage_menu'
+    - builder_table_create_elderand_landingpage_menu.php

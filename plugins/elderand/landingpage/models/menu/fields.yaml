@@ -1,0 +1,13 @@
+fields:
+    title:
+        label: 'elderand.landingpage::lang.menu_title'
+        span: auto
+        type: text
+    link:
+        label: Link
+        span: auto
+        type: text
+    class:
+        label: Class
+        span: auto
+        type: text

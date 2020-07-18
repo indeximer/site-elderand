@@ -1,0 +1,20 @@
+fields:
+    name:
+        label: 'elderand.landingpage::lang.social_name'
+        span: auto
+        type: text
+    link:
+        label: Link
+        span: auto
+        type: text
+    image:
+        label: 'elderand.landingpage::lang.social_image'
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '80'
+        imageHeight: '80'
+        type: fileupload

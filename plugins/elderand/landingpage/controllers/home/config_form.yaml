@@ -1,0 +1,11 @@
+name: Home
+modelClass: Elderand\LandingPage\Models\Home
+form: $/elderand/landingpage/models/home/fields.yaml
+defaultRedirect: elderand/landingpage/home
+create:
+    redirect: 'elderand/landingpage/home/update/:id'
+    redirectClose: elderand/landingpage/home
+update:
+    redirect: elderand/landingpage/home
+    redirectClose: elderand/landingpage/home/preview/1
+preview: {  }

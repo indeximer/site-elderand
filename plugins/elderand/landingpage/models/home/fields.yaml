@@ -1,0 +1,87 @@
+tabs:
+    fields:
+        highlight_title:
+            label: 'elderand.landingpage::lang.highlight_title'
+            span: auto
+            required: 1
+            type: text
+            tab: 'elderand.landingpage::lang.home_highlight'
+        highlight_cta:
+            label: 'elderand.landingpage::lang.highlight_cta'
+            span: auto
+            type: text
+            tab: 'elderand.landingpage::lang.home_highlight'
+        highlight_description:
+            label: 'elderand.landingpage::lang.highlight_description'
+            size: large
+            span: auto
+            required: 1
+            type: richeditor
+            tab: 'elderand.landingpage::lang.home_highlight'
+        highlight_video:
+            label: 'elderand.landingpage::lang.highlight_video'
+            span: auto
+            type: text
+            tab: 'elderand.landingpage::lang.home_highlight'
+        features_title:
+            label: 'elderand.landingpage::lang.features_title'
+            span: auto
+            hidden: 0
+            required: 1
+            type: text
+            tab: 'elderand.landingpage::lang.home_features'
+        features_cta:
+            label: 'elderand.landingpage::lang.features_cta'
+            span: auto
+            type: text
+            tab: 'elderand.landingpage::lang.home_features'
+        features_items:
+            label: 'elderand.landingpage::lang.features_items'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'elderand.landingpage::lang.home_features'
+            form:
+                fields:
+                    title:
+                        label: 'elderand.landingpage::lang.features_item_title'
+                        span: full
+                        required: 1
+                        type: text
+                    description:
+                        label: 'elderand.landingpage::lang.feature_item_description'
+                        size: large
+                        span: auto
+                        required: 1
+                        type: richeditor
+                    image:
+                        label: 'elderand.landingpage::lang.features_item_image'
+                        mode: image
+                        imageWidth: '200'
+                        imageHeight: '200'
+                        useCaption: true
+                        thumbOptions:
+                            mode: crop
+                            extension: auto
+                        span: auto
+                        required: 1
+                        type: fileupload
+        galery_title:
+            label: 'elderand.landingpage::lang.gallery_title'
+            span: full
+            required: 1
+            type: text
+            tab: 'elderand.landingpage::lang.home_gallery'
+        gallery:
+            label: 'elderand.landingpage::lang.gallery_images'
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            required: 1
+            type: fileupload
+            tab: 'elderand.landingpage::lang.home_gallery'

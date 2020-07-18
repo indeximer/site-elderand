@@ -1,0 +1,4 @@
+title: Social
+modelClass: Elderand\LandingPage\Models\Social
+toolbar:
+    buttons: reorder_toolbar

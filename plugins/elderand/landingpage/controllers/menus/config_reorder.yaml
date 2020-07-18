@@ -1,0 +1,4 @@
+title: Menus
+modelClass: Elderand\LandingPage\Models\Menu
+toolbar:
+    buttons: reorder_toolbar

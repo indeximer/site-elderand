@@ -1,0 +1,46 @@
+.page-header{
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    .title-wrapper,
+    .blue-bar{
+        background-color: $blue-2;
+        height: 94px;
+    }
+    .title-wrapper{
+        display: inline-flex;
+        align-items: center;
+        padding-right: 50px;
+        margin-top: 200px;
+        z-index: 2;
+    }
+    .page-title{
+        margin-bottom: 0;
+    }
+    .blue-bar{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25%;
+    }
+    .form-wrapper{
+        position: relative;
+        .form-main{
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            width: calc(100% - 30px);
+        }
+    }
+    @media screen and (max-width: 992px){
+        padding: 0;
+        .title-wrapper{
+            height: auto;
+            padding: 21px 15px;
+            margin-top: 100px;
+        }
+        .blue-bar{
+            display: none;
+        }
+    }
+}

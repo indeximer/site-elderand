@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: mane
+        type: text
+        searchable: true
+        sortable: true
+    link:
+        label: Link
+        type: text
+        searchable: false
+        sortable: false

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'font-regular';
+    src: url('../fonts/web/FordAntenna-Regular.eot');
+    src: url('../fonts/web/FordAntenna-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web/FordAntenna-Regular.woff2') format('woff2'),
+         url('../fonts/web/FordAntenna-Regular.woff') format('woff'),
+         url('../fonts/web/FordAntenna-Regular.svg#FordAntenna-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'font-bold';
+    src: url('../fonts/web/FordAntenna-Bold.eot');
+    src: url('../fonts/web/FordAntenna-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/web/FordAntenna-Bold.woff2') format('woff2'),
+         url('../fonts/web/FordAntenna-Bold.woff') format('woff'),
+         url('../fonts/web/FordAntenna-Bold.svg#FordAntenna-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TYPOGRAPHY */
+
+.page-title{
+    font: 32px 'font-bold';
+    color: $white;
+    @media screen and (max-width: 992px){
+        font-size: 22px;
+    }
+}
+.section-title{
+    font: 28px 'font-bold';
+    color: $blue-2;
+    @media screen and (max-width: 992px){
+        font-size: 22px;
+    }
+}
+
+.bold{
+    font-family: 'font-bold';
+}
+.font-regular{
+    font-family: 'font-regular';
+}
+
+.color-blue-1{color: $blue-1;}
+.color-blue-2{color: $blue-2;}
+.color-blue-3{color: $blue-3;}
+.color-grey-1{color: $grey-1;}
+.color-grey-2{color: $grey-2;}
+.color-grey-3{color: $grey-3;}
+.color-black{color: $black;}
+.color-white{color: $white;}
+
+.font{
+    line-height: 1.2;
+    &-10{font-size: 10px;}
+    &-11{font-size: 11px;}
+    &-12{font-size: 12px;}
+    &-14{font-size: 14px;}
+    &-16{font-size: 16px;}
+    &-18{font-size: 18px;}
+    &-20{font-size: 20px;}
+    &-22{font-size: 22px;}
+    &-24{font-size: 24px;}
+    &-28{font-size: 28px;}
+    &-30{font-size: 30px;}
+    &-32{font-size: 32px;}
+    &-40{font-size: 40px;}
+    @media screen and (max-width: 992px){
+        &-16{font-size: 14px;}
+        &-18{font-size: 16px;}
+        &-20{font-size: 18px;}
+        &-22{font-size: 18px;}
+        &-28{font-size: 20px;}
+        &-30{font-size: 22px;}
+        &-32{font-size: 22px;}
+        &-40{font-size: 24px;}
+    }
+}

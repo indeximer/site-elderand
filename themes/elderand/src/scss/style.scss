@@ -1,0 +1,34 @@
+//vendors
+@import './vendors/bootstrap.min';
+@import './vendors/fontello';
+@import './vendors/swiper';
+@import './vendors/nouislider.min';
+
+//utils
+@import './utils/vars';
+@import './utils/fonts';
+@import './utils/helpers';
+
+//components
+@import './components/base';
+@import './components/button';
+@import './components/swiper';
+@import './components/modal';
+@import './components/header';
+@import './components/footer';
+@import './components/banner';
+@import './components/home';
+@import './components/form';
+@import './components/card-used';
+@import './components/about';
+@import './components/new-cars';
+@import './components/new-car';
+@import './components/card-new';
+@import './components/used-cars';
+@import './components/used-car';
+@import './components/modal-favorites';
+@import './components/page-header';
+@import './components/parts';
+@import './components/direct-sales';
+@import './components/tech-assist';
+@import './components/offers';

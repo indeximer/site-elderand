@@ -1,0 +1,10 @@
+name: Social
+form: $/elderand/landingpage/models/social/fields.yaml
+modelClass: Elderand\LandingPage\Models\Social
+defaultRedirect: elderand/landingpage/social
+create:
+    redirect: 'elderand/landingpage/social/update/:id'
+    redirectClose: elderand/landingpage/social
+update:
+    redirect: elderand/landingpage/social
+    redirectClose: elderand/landingpage/social

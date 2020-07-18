@@ -1,0 +1,12 @@
+list: $/elderand/landingpage/models/social/columns.yaml
+modelClass: Elderand\LandingPage\Models\Social
+title: Social
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'elderand/landingpage/social/update/:id'

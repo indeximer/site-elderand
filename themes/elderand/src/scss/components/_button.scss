@@ -1,0 +1,125 @@
+.btn{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    color: $white;
+    text-transform: uppercase;
+    font: 14px 'font-bold';
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    min-width: 150px;
+    justify-content: center;
+    span{
+        margin-right: 4px;
+    }
+    i{
+        margin-right: 10px;
+        font-size: 28px;
+    }
+    p{margin-bottom: 0;}
+    .text{text-align: left;}
+    .sm{
+        text-transform: none;
+        font: 10px 'font-regular';
+    }
+    &.btn-lg{
+        height: 52px;
+        width: 270px;
+        max-width: 100%;
+    }
+    &:hover{
+        color: $white;
+    }
+    &:active,
+    &:focus,
+    &.active,
+    &.active:focus{
+        box-shadow: none;
+        outline: none;
+        border: none;
+        color: $white;
+    }
+    &.btn-red{
+        background-color: $red-1;
+        &:hover{
+            background-color: $red-2;
+        }
+    }
+    &.btn-orange{
+        background-color: $orange-1;
+        &:hover{
+            background-color: $orange-2;
+        }
+    }
+    &.btn-green{
+        background-color: $green-1;
+        &:hover{
+            background-color: $green-3;
+        }
+    }
+    &.btn-green-2{
+        background-color: $green-2;
+        &:hover{
+            background-color: $green-3;
+        }
+    }
+    &.btn-blue{
+        background-color: $blue-1;
+        &:hover{
+            background-color: $blue-2;
+        }
+    }
+    &.btn-yellow{
+        background-color: $yellow-1;
+        &:hover{
+            background-color: $yellow-2;
+        }
+    }
+    &.btn-brown{
+        background-color: $brown-4;
+        &:hover{
+            background-color: $blue-4;
+        }
+    }
+    &.btn-grey{
+        background-color: $grey-2;
+        color: $blue-1;
+        &:hover{
+            background-color: $grey-3;
+            color: $blue-1;
+        }
+    }
+    &.btn-ghost-blue{
+        background-color: transparent;
+        border: solid 2px $blue-1;
+        color: $blue-1;
+        &:hover,
+        &.active{
+            background-color: $blue-1;
+            color: $white;
+        }
+    }
+}
+
+.btn-wrapper{
+    display: flex;
+    .btn{
+        flex-grow: 1;
+        margin-left: 10px;
+        &:first-child{
+            margin-left: 0;
+        }
+        @media screen and (max-width: 992px){
+            min-width: auto;
+        }
+    }
+}
+
+.btn-cuppon{
+    font-size: 20px !important;
+    font-weight: bolder !important;
+}

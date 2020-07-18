@@ -1,0 +1,10 @@
+name: Menus
+form: $/elderand/landingpage/models/menu/fields.yaml
+modelClass: Elderand\LandingPage\Models\Menu
+defaultRedirect: elderand/landingpage/menus
+create:
+    redirect: 'elderand/landingpage/menus/update/:id'
+    redirectClose: elderand/landingpage/menus
+update:
+    redirect: elderand/landingpage/menus
+    redirectClose: elderand/landingpage/menus
