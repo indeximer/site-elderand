@@ -1,4 +1,18 @@
-1595120310a:1:{s:10:"header.htm";a:5:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1224:"<!-- Nav -->
+1595374681a:1:{s:10:"header.htm";a:7:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1005:"[localePicker]
+forceUrl = 0
+
+[builderList]
+modelClass = "Elderand\LandingPage\Models\Menu"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'localePicker' %}
+<!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -10,17 +24,10 @@
             </button>
             <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
         </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-            </ul>
-        </div>
+        {% component 'builderList' %}        
     </div>
-</nav>
-";s:5:"mtime";i:1595111722;s:6:"markup";s:1223:"<!-- Nav -->
+</nav>";s:5:"mtime";i:1595374065;s:6:"markup";s:724:"{% component 'localePicker' %}
+<!-- Nav -->
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -32,13 +39,6 @@
             </button>
             <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
         </div>
-        <div class="collapse navbar-collapse navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="separator hidden-xs"></li>
-                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>
-                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>
-                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>
-            </ul>
-        </div>
+        {% component 'builderList' %}        
     </div>
-</nav>";s:4:"code";N;}}
+</nav>";s:4:"code";N;s:12:"localePicker";a:1:{s:8:"forceUrl";s:1:"0";}s:11:"builderList";a:8:{s:10:"modelClass";s:32:"Elderand\LandingPage\Models\Menu";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

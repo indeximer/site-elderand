@@ -39,11 +39,11 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
         // line 2
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/bg-deep-blue.png");
         echo "\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"-2\" src=\"";
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"";
         // line 3
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/parallax-04.png");
         echo "\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"";
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"4\" src=\"";
         // line 4
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/fog-03.png");
         echo "\" alt=\"img-banner-elderand\">
@@ -51,15 +51,15 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
         // line 5
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/parallax-03.png");
         echo "\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"";
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"5\" src=\"";
         // line 6
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/fog-02.png");
         echo "\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"-2\" src=\"";
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"-4\" src=\"";
         // line 7
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/parallax-02.png");
         echo "\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"";
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"8\" src=\"";
         // line 8
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/parallax-banner/fog-01.png");
         echo "\" alt=\"img-banner-elderand\">
@@ -90,12 +90,12 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
     {
         return new Source("<div class=\"parallax-banner\">
     <img class=\"mw-100\" src=\"{{ 'assets/images/parallax-banner/bg-deep-blue.png'|theme }}\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"-2\" src=\"{{ 'assets/images/parallax-banner/parallax-04.png'|theme }}\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"{{ 'assets/images/parallax-banner/fog-03.png'|theme }}\" alt=\"img-banner-elderand\">
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"{{ 'assets/images/parallax-banner/parallax-04.png'|theme }}\" alt=\"img-banner-elderand\">
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"4\" src=\"{{ 'assets/images/parallax-banner/fog-03.png'|theme }}\" alt=\"img-banner-elderand\">
     <img class=\"mw-100 rellax\" data-rellax-speed=\"-2\" src=\"{{ 'assets/images/parallax-banner/parallax-03.png'|theme }}\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"{{ 'assets/images/parallax-banner/fog-02.png'|theme }}\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"-2\" src=\"{{ 'assets/images/parallax-banner/parallax-02.png'|theme }}\" alt=\"img-banner-elderand\">
-    <img class=\"mw-100 rellax\" data-rellax-speed=\"7\" src=\"{{ 'assets/images/parallax-banner/fog-01.png'|theme }}\" alt=\"img-banner-elderand\">
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"5\" src=\"{{ 'assets/images/parallax-banner/fog-02.png'|theme }}\" alt=\"img-banner-elderand\">
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"-4\" src=\"{{ 'assets/images/parallax-banner/parallax-02.png'|theme }}\" alt=\"img-banner-elderand\">
+    <img class=\"mw-100 rellax\" data-rellax-speed=\"8\" src=\"{{ 'assets/images/parallax-banner/fog-01.png'|theme }}\" alt=\"img-banner-elderand\">
     <img class=\"mw-100 rellax\" data-rellax-speed=\"0\" src=\"{{ 'assets/images/parallax-banner/parallax-01.png'|theme }}\" alt=\"img-banner-elderand\">
 
 </div>", "D:\\wamp64\\www\\sites\\elderand-site/themes/elderand/partials/banner.htm", "");

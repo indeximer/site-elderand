@@ -38,8 +38,7 @@ class __TwigTemplate_ead45b81db847df1ee86db2c77c544d3abafc81422817903cfec952b360
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("banner"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
         // line 2
-        echo "
-<section class=\"container\">
+        echo "<section class=\"container\">
     <div class=\"page-header\">
         <h2>Overview <small>Basic concepts</small></h2>
     </div>
@@ -69,7 +68,6 @@ class __TwigTemplate_ead45b81db847df1ee86db2c77c544d3abafc81422817903cfec952b360
     public function getSourceContext()
     {
         return new Source("{% partial 'banner' %}
-
 <section class=\"container\">
     <div class=\"page-header\">
         <h2>Overview <small>Basic concepts</small></h2>

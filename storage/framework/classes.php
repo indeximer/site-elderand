@@ -101,4 +101,5 @@
   'RainLab\\Translate\\Models\\Message' => 'plugins\\rainlab\\translate\\models\\Message.php',
   'cms\\Controllers\\themes' => 'modules\\cms\\controllers\\themes.php',
   'RainLab\\Translate\\Classes\\ThemeScanner' => 'plugins\\rainlab\\translate\\classes\\ThemeScanner.php',
+  'RainLab\\Builder\\Classes\\ComponentHelper' => 'plugins\\rainlab\\builder\\classes\\ComponentHelper.php',
 );

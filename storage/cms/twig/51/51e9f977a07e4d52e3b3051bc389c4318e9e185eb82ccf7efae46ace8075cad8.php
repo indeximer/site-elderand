@@ -34,6 +34,10 @@ class __TwigTemplate_b32f4363515f07e530c5d01b5bd1c666484485f5f4883cbf8235d73b861
     {
         $macros = $this->macros;
         // line 1
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("localePicker"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 2
         echo "<!-- Nav -->
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
@@ -45,39 +49,16 @@ class __TwigTemplate_b32f4363515f07e530c5d01b5bd1c666484485f5f4883cbf8235d73b861
                 <span class=\"icon-bar\"></span>
             </button>
             <a class=\"navbar-brand\" href=\"";
-        // line 11
+        // line 12
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">October Demo</a>
         </div>
-        <div class=\"collapse navbar-collapse navbar-main-collapse\">
-            <ul class=\"nav navbar-nav\">
-                <li class=\"separator hidden-xs\"></li>
-                <li class=\"";
-        // line 16
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 16), "id", [], "any", false, false, false, 16) == "home")) {
-            echo "active";
-        }
-        echo "\"><a href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
-        echo "\">Basic concepts</a></li>
-                <li class=\"";
-        // line 17
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 17), "id", [], "any", false, false, false, 17) == "ajax")) {
-            echo "active";
-        }
-        echo "\"><a href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("ajax");
-        echo "\">AJAX framework</a></li>
-                <li class=\"";
-        // line 18
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 18), "id", [], "any", false, false, false, 18) == "plugins")) {
-            echo "active";
-        }
-        echo "\"><a href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("plugins");
-        echo "\">Plugin components</a></li>
-            </ul>
-        </div>
+        ";
+        // line 14
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("builderList"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        echo "        
     </div>
 </nav>";
     }
@@ -94,12 +75,13 @@ class __TwigTemplate_b32f4363515f07e530c5d01b5bd1c666484485f5f4883cbf8235d73b861
 
     public function getDebugInfo()
     {
-        return array (  73 => 18,  65 => 17,  57 => 16,  49 => 11,  37 => 1,);
+        return array (  58 => 14,  53 => 12,  41 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- Nav -->
+        return new Source("{% component 'localePicker' %}
+<!-- Nav -->
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
         <div class=\"navbar-header\">
@@ -111,14 +93,7 @@ class __TwigTemplate_b32f4363515f07e530c5d01b5bd1c666484485f5f4883cbf8235d73b861
             </button>
             <a class=\"navbar-brand\" href=\"{{ 'home'|page }}\">October Demo</a>
         </div>
-        <div class=\"collapse navbar-collapse navbar-main-collapse\">
-            <ul class=\"nav navbar-nav\">
-                <li class=\"separator hidden-xs\"></li>
-                <li class=\"{% if this.page.id == 'home' %}active{% endif %}\"><a href=\"{{ 'home'|page }}\">Basic concepts</a></li>
-                <li class=\"{% if this.page.id == 'ajax' %}active{% endif %}\"><a href=\"{{ 'ajax'|page }}\">AJAX framework</a></li>
-                <li class=\"{% if this.page.id == 'plugins' %}active{% endif %}\"><a href=\"{{ 'plugins'|page }}\">Plugin components</a></li>
-            </ul>
-        </div>
+        {% component 'builderList' %}        
     </div>
 </nav>", "D:\\wamp64\\www\\sites\\elderand-site/themes/elderand/partials/header.htm", "");
     }

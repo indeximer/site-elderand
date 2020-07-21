@@ -34,76 +34,80 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
     {
         $macros = $this->macros;
         // line 1
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("alternateHrefLangElements"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 2
         echo "<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"utf-8\">
         <title>October CMS - ";
-        // line 5
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 5), "title", [], "any", false, false, false, 5), "html", null, true);
+        // line 6
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 6), "title", [], "any", false, false, false, 6), "html", null, true);
         echo "</title>
         <meta name=\"description\" content=\"";
-        // line 6
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 6), "meta_description", [], "any", false, false, false, 6), "html", null, true);
+        // line 7
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 7), "meta_description", [], "any", false, false, false, 7), "html", null, true);
         echo "\">
         <meta name=\"title\" content=\"";
-        // line 7
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 7), "meta_title", [], "any", false, false, false, 7), "html", null, true);
+        // line 8
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 8), "meta_title", [], "any", false, false, false, 8), "html", null, true);
         echo "\">
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
-        // line 11
+        // line 12
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
         echo "\">
         <link href=\"";
-        // line 12
+        // line 13
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.min.css");
         echo "\" rel=\"stylesheet\">
         ";
-        // line 13
+        // line 14
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 14
+        // line 15
         echo "    </head>
     <body>
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 19
+        // line 20
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 20
+        // line 21
         echo "        </header>
 
         <!-- Content -->
         <main>
             ";
-        // line 24
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 25
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 26
         echo "        </main>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 29
+        // line 30
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 30
+        // line 31
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 33
+        // line 34
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.min.js");
         echo "\"></script>
         ";
-        // line 34
+        // line 35
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -114,11 +118,11 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 35
+        // line 36
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 36
+        // line 37
         echo "
     </body>
 </html>";
@@ -136,12 +140,13 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
 
     public function getDebugInfo()
     {
-        return array (  122 => 36,  118 => 35,  107 => 34,  103 => 33,  98 => 30,  94 => 29,  88 => 25,  86 => 24,  80 => 20,  76 => 19,  69 => 14,  66 => 13,  62 => 12,  58 => 11,  51 => 7,  47 => 6,  43 => 5,  37 => 1,);
+        return array (  126 => 37,  122 => 36,  111 => 35,  107 => 34,  102 => 31,  98 => 30,  92 => 26,  90 => 25,  84 => 21,  80 => 20,  73 => 15,  70 => 14,  66 => 13,  62 => 12,  55 => 8,  51 => 7,  47 => 6,  41 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!DOCTYPE html>
+        return new Source("{% component 'alternateHrefLangElements' %}
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset=\"utf-8\">
