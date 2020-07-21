@@ -6,7 +6,6 @@ const uglify = require('gulp-uglify')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
-const imagemin = require('gulp-imagemin')
 const rename = require('gulp-rename')
 const babel = require('gulp-babel');
 const browsersync = require("browser-sync").create();
@@ -18,9 +17,7 @@ const files = {
     jsPath: [ // set the js files in order of dependence
         'src/js/vendors/jquery.min.js',
         'src/js/vendors/bootstrap.bundle.min.js',
-        'src/js/vendors/swiper.min.js',
-        'src/js/vendors/wNumb.min.js',
-        'src/js/vendors/nouislider.min.js',
+        'src/js/vendors/rellax.min.js',
         'src/js/**/*.js'
     ],
     imgPath: 'src/img',
@@ -56,7 +53,6 @@ function scssBuildTask(){
 }
 
 // JS task: concatenates and uglifies JS files to script.js
-// JS task: concatenates and uglifies JS files to script.js
 function jsTask(){
     return src(files.jsPath)
         .pipe(babel({presets: ["@babel/env"]}))
@@ -66,21 +62,11 @@ function jsTask(){
     )
 }
 
-function optimizeImg(){
-    return src('src/img/**/*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5})
-        ]))
-        .pipe(dest('assets/img'))
-}
-
 // BrowserSync
 function browserSync(done) {
     browsersync.init({
         proxy: {
-            target: "http://localhost:8000",
+            target: "http://localhost/sites/elderand-site",
         },
         port: 3000
     });
@@ -104,7 +90,7 @@ function watchTask(){
 }
 
 //build static assets
-const build = series(parallel(scssBuildTask, jsTask, optimizeImg))
+const build = series(parallel(scssBuildTask, jsTask))
 
 //Default tast for development use
 exports.default = series(

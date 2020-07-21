@@ -34,8 +34,12 @@ class __TwigTemplate_ead45b81db847df1ee86db2c77c544d3abafc81422817903cfec952b360
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"container\">
-
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("banner"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 2
+        echo "
+<section class=\"container\">
     <div class=\"page-header\">
         <h2>Overview <small>Basic concepts</small></h2>
     </div>
@@ -52,15 +56,21 @@ class __TwigTemplate_ead45b81db847df1ee86db2c77c544d3abafc81422817903cfec952b360
         return "D:\\wamp64\\www\\sites\\elderand-site/themes/elderand/pages/home.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  37 => 1,);
+        return array (  41 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"container\">
+        return new Source("{% partial 'banner' %}
 
+<section class=\"container\">
     <div class=\"page-header\">
         <h2>Overview <small>Basic concepts</small></h2>
     </div>

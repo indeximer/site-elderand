@@ -10,6 +10,7 @@ const modalFilter = $('.modal-filter')
 const btnModalFavorites= $('.btn-modal-favorites')
 
 const headerThreshold = 450
+const rellax = new Rellax('.rellax')
 
 $(document).ready(function(){
     //initialize my-tabs
