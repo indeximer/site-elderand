@@ -242,7 +242,6 @@ return [
     'form' => [
         'create_title' => 'Novo :name',
         'update_title' => 'Editar :name',
-        'edit' => 'Editar',
         'preview_title' => 'Visualizar :name',
         'create_success' => ':name foi criado com sucesso',
         'update_success' => ':name foi atualizado com sucesso',
@@ -406,7 +405,7 @@ return [
         'line_breaker_tags' => 'Tags de quebra de linha',
         'line_breaker_tags_comment' => 'A lista de tags usadas para colocar um elemento em quebra de linha.',
         'toolbar_buttons' => 'Botões da barra de ferramentas',
-        'toolbar_buttons_comment' => 'Os botões da barra de ferramentas a serem exibidos no Rich Editor por padrão. [fullscreen, bold, italic, underline, strikeThrough, subscript, superscript, fontFamily, fontSize, |, color, emoticons, inlineStyle, paragraphStyle, |, paragraphFormat, align, formatOL, formatUL, outdent, indent, quote, insertHR, -, insertLink, insertImage, insertVideo, insertAudio, insertFile, insertTable, undo, redo, clearFormatting, selectAll, html]',
+        'toolbar_buttons_comment' => 'Os botões da barra de ferramentas a serem exibidos no Rich Editor por padrão.',
     ],
     'tooltips' => [
         'preview_website' => 'Visualizar a página'

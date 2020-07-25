@@ -8,22 +8,24 @@ scopeValue = "{{ :scope }}"
 displayColumn = "title"
 noRecordsMessage = "No records found"
 detailsPage = "-"
+detailsKeyColumn = "link"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
+{% set menuItems = builderList.records %}
+
 {% component 'localePicker' %}
 <!-- Nav -->
-<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ 'home'|page }}">October Demo</a>
-        </div>
-        {% component 'builderList' %}        
-    </div>
-</nav>
+<section class="container-fluid">
+    <nav class="container">
+        <ul class="record-list">
+            {% for menuItem in menuItems %}
+                <li>
+                    <a href="{{ 'home'|page }}{{ menuItem.link }}">
+                        {{ menuItem.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>  
+    </nav>
+</section>
