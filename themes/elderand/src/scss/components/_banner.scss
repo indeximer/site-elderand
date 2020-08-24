@@ -5,6 +5,33 @@
         position: absolute;
         top: 0;
         left:0;
-        transition: all 0.3s ease;
+        transition: all 0.1s none;
+    } 
+    .banner-logo{
+        position: absolute;
+        left: 50%;
+        margin-left: -272px;
+        top: 90px;
+        width: 544px;
+    }
+    .banner-content{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 30px;
+        .continue-link:hover{color: $white;}
+    }
+    .mobile-banner{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    @media screen and (max-width: 1050px){
+        .banner-logo{
+            width: 240px;
+            transform: translate(-50%, 0);
+            margin: 0;
+        }
+        .banner-content{padding-bottom: 10px;}
     }
 }

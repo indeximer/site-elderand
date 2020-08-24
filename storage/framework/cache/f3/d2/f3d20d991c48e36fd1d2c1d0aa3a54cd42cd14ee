@@ -1,0 +1,43 @@
+1598306945a:1:{s:15:"screenshots.htm";a:5:{s:8:"fileName";s:15:"screenshots.htm";s:7:"content";s:958:"{% set gallery = homeContent.gallery %}
+<section class="content-section screenshots-section container-fluid" id="screenshots">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">111</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{  homeContent.galery_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <ul class="row gallery">
+        {% for image in gallery %}
+            <li class="col-6 col-lg-3 mb-30">
+                <a class="bordered-box" data-fancybox="gallery" href="{{ image.path() }}">
+                    <img class="w-100" src="{{ image.path() }}" alt="">
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>";s:5:"mtime";i:1596144357;s:6:"markup";s:958:"{% set gallery = homeContent.gallery %}
+<section class="content-section screenshots-section container-fluid" id="screenshots">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">111</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{  homeContent.galery_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <ul class="row gallery">
+        {% for image in gallery %}
+            <li class="col-6 col-lg-3 mb-30">
+                <a class="bordered-box" data-fancybox="gallery" href="{{ image.path() }}">
+                    <img class="w-100" src="{{ image.path() }}" alt="">
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>";s:4:"code";N;}}

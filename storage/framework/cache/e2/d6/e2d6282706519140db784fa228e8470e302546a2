@@ -1,0 +1,37 @@
+1598306945a:1:{s:19:"blog-highlights.htm";a:5:{s:8:"fileName";s:19:"blog-highlights.htm";s:7:"content";s:738:"<section class="content-section blog-section container-fluid" id="blog">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">1v</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">Blog</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p class="color-white bold font-30 mb-30 text-center">
+                {{ 'Coming soon!'|_ }}
+            </p>
+        </div>        
+    </div>
+</section>";s:5:"mtime";i:1596158672;s:6:"markup";s:738:"<section class="content-section blog-section container-fluid" id="blog">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">1v</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">Blog</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p class="color-white bold font-30 mb-30 text-center">
+                {{ 'Coming soon!'|_ }}
+            </p>
+        </div>        
+    </div>
+</section>";s:4:"code";N;}}

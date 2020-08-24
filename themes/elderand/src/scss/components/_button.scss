@@ -1,4 +1,4 @@
-.btn{
+.btn, a.btn{
     border: none;
     border-radius: 0;
     outline: none;
@@ -7,32 +7,68 @@
     display: inline-flex;
     color: $white;
     text-transform: uppercase;
-    font: 14px 'font-bold';
+    font: 18px 'font-regular';
     align-items: center;
-    height: 40px;
+    height: 55px;
     padding: 0 10px;
-    min-width: 150px;
+    min-width: 221px;
     justify-content: center;
-    span{
-        margin-right: 4px;
-    }
     i{
         margin-right: 10px;
-        font-size: 28px;
+        font-size: 20px;
+        transition: all 0.3 ease;
     }
-    p{margin-bottom: 0;}
-    .text{text-align: left;}
-    .sm{
-        text-transform: none;
-        font: 10px 'font-regular';
+    &.btn-primary{
+        position: relative;
+        background-color: transparent;
+        color: $white;
+        border: solid 1px transparent;
+        z-index: 1;   
+        &:before{
+            content: " ";
+            display: block;
+            position: absolute;
+            border: solid 1px $night-grey;
+            background-color: rgba(122, 130, 153, 0.2);
+            width: calc(100% + 1px);
+            height: calc(100% + 1px);
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 0.3s ease;
+            z-index: -1;
+            background-image: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M0,0H10V5H5v5H0V0Z" fill="%23474F66"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M10,0H0V5H5v5h5V0Z" fill="%23474f66"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M0,10H10V5H5V0H0V10Z" fill="%23474f66"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M10,10H0V5H5V0h5V10Z" fill="%23474f66"/></svg>');
+                background-position: left top, right top, left bottom, right bottom;
+                background-repeat: no-repeat;
+                background-origin: border-box;
+        }
+        &:hover{
+            i{color: $ruby-dragon;}
+            border-color: $ruby-dragon;
+            &:before{                
+                width: calc(100% - 5px);
+                height: calc(100% - 5px);
+                border: solid 1px transparent;
+                background-color: $blood;
+                background-image: 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M0,0H10V5H5v5H0V0Z" fill="%23D31F30"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M10,0H0V5H5v5h5V0Z" fill="%23D31F30"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M0,10H10V5H5V0H0V10Z" fill="%23D31F30"/></svg>'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="9.999" height="10.001" viewBox="0 0 9.999 10.001"><path d="M10,10H0V5H5V0h5V10Z" fill="%23D31F30"/></svg>');
+            }
+        }
     }
     &.btn-lg{
-        height: 52px;
-        width: 270px;
+        width: 410px;
         max-width: 100%;
     }
     &:hover{
         color: $white;
+        opacity: 1;
     }
     &:active,
     &:focus,
@@ -43,83 +79,13 @@
         border: none;
         color: $white;
     }
-    &.btn-red{
-        background-color: $red-1;
-        &:hover{
-            background-color: $red-2;
+    @media screen and (max-width: 1050px){
+        height: 40px;
+        min-width: 100px;
+        font-size: 12px;
+        i{
+            font-size: 14px;
+            margin-right: 5px;
         }
     }
-    &.btn-orange{
-        background-color: $orange-1;
-        &:hover{
-            background-color: $orange-2;
-        }
-    }
-    &.btn-green{
-        background-color: $green-1;
-        &:hover{
-            background-color: $green-3;
-        }
-    }
-    &.btn-green-2{
-        background-color: $green-2;
-        &:hover{
-            background-color: $green-3;
-        }
-    }
-    &.btn-blue{
-        background-color: $blue-1;
-        &:hover{
-            background-color: $blue-2;
-        }
-    }
-    &.btn-yellow{
-        background-color: $yellow-1;
-        &:hover{
-            background-color: $yellow-2;
-        }
-    }
-    &.btn-brown{
-        background-color: $brown-4;
-        &:hover{
-            background-color: $blue-4;
-        }
-    }
-    &.btn-grey{
-        background-color: $grey-2;
-        color: $blue-1;
-        &:hover{
-            background-color: $grey-3;
-            color: $blue-1;
-        }
-    }
-    &.btn-ghost-blue{
-        background-color: transparent;
-        border: solid 2px $blue-1;
-        color: $blue-1;
-        &:hover,
-        &.active{
-            background-color: $blue-1;
-            color: $white;
-        }
-    }
-}
-
-.btn-wrapper{
-    display: flex;
-    .btn{
-        flex-grow: 1;
-        margin-left: 10px;
-        &:first-child{
-            margin-left: 0;
-        }
-        @media screen and (max-width: 992px){
-            min-width: auto;
-        }
-    }
-}
-
-.btn-cuppon{
-    font-size: 20px !important;
-    font-weight: bolder !important;
 }

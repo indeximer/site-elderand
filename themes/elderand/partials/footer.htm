@@ -1,6 +1,41 @@
-<div id="footer">
-    <div class="container">
-        <hr />
-        <p class="muted credit">&copy; 2013 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+[builderList socialItems]
+modelClass = "Elderand\LandingPage\Models\Social"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsKeyColumn = "link"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section class="conteinar-fluid footer-logos">
+    <div class="row">
+        <div class="container">
+            <div class="row align-logos justify-content-between align-items-center">
+                <div class="col-6 col-lg-auto"><img class="mw-100" src="{{ 'assets/images/logos/mantra.png'|theme }}" alt="logo-mantra"></div>
+                <div class="col-6 col-lg-auto"><img class="mw-100" src="{{ 'assets/images/logos/sinergia.png'|theme }}" alt="logo-sinergia"></div>
+                <div class="col-6 col-lg-auto"><img class="mw-100" src="{{ 'assets/images/logos/ancine.png'|theme }}" alt="logo-ancine"></div>
+                <div class="col-6 col-lg-auto"><img class="mw-100" src="{{ 'assets/images/logos/brde.png'|theme }}" alt="logo-brde"></div>
+                <div class="col-6 col-lg-auto"><img class="mw-100" src="{{ 'assets/images/logos/fsa.png'|theme }}" alt="logo-brde"></div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<footer class="footer container-fluid">
+    <div class="row text-center">
+        <div class="col-12 social-icons">
+            <div class="col-12 social-icons mb-20">
+                {% for item in socialItems.records %}
+                    <a class="social-item" href="{{ item.link }}" target="_blank">
+                        <img class="mw-100" src="{{ item.image.path() }}" alt="elderand-{{ item.name }}">
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-12 font-12">
+            <p class="mb-0">Elderand ©2020 Mantra & Sinergia Games, august 2020.</p>
+        </div>
+    </div>
+</footer>

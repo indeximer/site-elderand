@@ -1,182 +1,78 @@
-.form-main{
-    width: 255px;
-    display: none;
-    @media screen and (min-width: 992px){
-        display: block;
-    }
-}
-.form-content{
-    background-color: $blue-3;
-    padding: 30px 30px 0;
-    [class^="col-"], [class*=" col-"]{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-    .btn{
-        width: calc(100% + 30px);
-        margin-left: -15px;
-        margin-right: -15px;
-        height: 60px;
-        font-size: 16px;
-    }
-    .form-control{
-        border: none;
-        font-size: 14px;
-        height: 36px;
-        padding: 0 8px;
-    }
-    textarea.form-control{
-        height: 66px;
-    }
-}
-.input-wrapper{
-    position: relative;
-    label{
-        margin: 0;
-        position: absolute;
-        font-size: 14px;
-        opacity: 0.7;
-        transition: all 0.3s ease;
-        left: 8px;
-        top: 50%;
-        transform: translate(0, -50%);
-        cursor: text;
-    }
-    textarea{
-        resize: none;
-        &+label{
-            top: 18px;
-            transform: translate(0 0);
-
-        }
-    }
-    ::placeholder{
-        color: $white;
-    }
-    input.form-control, textarea.form-control{
-        padding: 14px 8px 0 8px;
-        &:focus,
-        &:not(:placeholder-shown){
-            &+label{
-                font-family: 'font-bold';
-                opacity: 1;
-                transform: translate(0 0);
-                top: 10px;;
-                font-size: 11px;
-                color: $blue-3
+.main-form{
+    .form-group{
+        position: relative;
+        margin-bottom: 30px;
+        &.text-area{
+            label{
+                top: 18px;
+                transform: translate(0,0);
             }
         }
+        label{
+            margin: 0;
+            position: absolute;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            left: 10px;
+            top: 50%;
+            transform: translate(0, -50%);
+            line-height: 1;
+            cursor: text;
+            &.required:after{
+                content: '*';
+                color: $ruby-dragon;
+            }
+            &.active{
+                transform: translate(0, 0);
+                top: 10px;;
+                font-size: 12px;
+            }
+        }
+        .form-control{
+            padding: 15px 10px 0 10px;
+            border-radius: 0;
+            border: solid 1px $night-grey;
+            font-size: 16px;
+            color: $white;
+            background-color: transparent;
+            height: 55px;
+            &:focus{
+                background-color: rgba(71, 79, 102, 0.2);
+            }
+        }
+        textarea.form-control{
+            resize: none;
+            height: 120px;
+            padding-top: 22px;
+        }
+        .invalid-feedback{
+            display: block;
+            position: absolute;
+            bottom: -17px;
+            margin: 0;
+            font-size: 12px;
+        } 
+    }
+    .btn-submit-wrapper{
+        text-align: center;
     }
 }
-.form-control{
-    border-radius: 0;
-    font-size: 14px;
+.form-control.is-invalid, .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus{
+    border-color: $ruby-dragon;
+    box-shadow: none;
 }
 .custom-select{
-    background-size: 12px;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Camada_1" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><path d="M15.6,21.2L15.6,21.2c-0.3,0.3-0.9,0.3-1.2,0L3.3,10c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0L15,19.4L25.5,8.8l0,0  c0.3-0.3,0.9-0.3,1.2,0l0,0c0.3,0.3,0.3,0.9,0,1.2L15.6,21.2z"/></svg>');
-}
-
-.btn-privacy{
-    transition: all 0.3s ease;
-    text-decoration: underline;
-    cursor: pointer;
-    &:hover{
-        color: $blue-1;
+    background-size: 14px;
+    background-position: right 5px center;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="%237A8299"  version="1.1" id="Camada_1" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve"><path d="M15.6,21.2L15.6,21.2c-0.3,0.3-0.9,0.3-1.2,0L3.3,10c-0.3-0.3-0.3-0.9,0-1.2c0.3-0.3,0.9-0.3,1.2,0L15,19.4L25.5,8.8l0,0  c0.3-0.3,0.9-0.3,1.2,0l0,0c0.3,0.3,0.3,0.9,0,1.2L15.6,21.2z"/></svg>');
+    option{
+        background-color: $night-grey;
+        border:none;
     }
 }
 
 .custom-control-label{
     cursor: pointer;
 }
-.custom-checkbox{
-    display: flex;
-    align-items: center;
-    .custom-control-input{
-        &~ .custom-control-label::before,
-        &~ .custom-control-label::after{
-            border-radius: 0;
-            top: 50%;
-            transform: translate(0, -50%);
-        }
-        &:checked {
-            background-color: $blue-1;
-        }    
-    }
-}
 
-.custom-file{
-    input{
-        cursor: pointer;
-        &:hover{
-            +label:after{
-                background-color: $blue-2;
-            }
-        }
-    }
-    label{
-        border-radius: 0;
-        font-size: 14px;
-        &:after{
-            transition: all 0.3s ease;    
-            color: $white;
-            border-radius: 0;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            content: 'ANEXAR';
-            font: 12px 'font-bold';
-            background-color: $blue-1;
-        }
-    }
-}
-
-.iframe-privacy{
-    border: none;
-    width: 100%;
-    height: 400px;
-    max-height: 100%;
-    @media screen and (max-width: 992px){
-        height: 300px;
-    }
-}
-
-.modal-form{
-    z-index: 850;
-    .pop-up-content{
-        position: absolute;
-        right: 0;
-        top: 70px;
-        width: 285px;
-    }
-    @media screen and (max-width: 992px){
-        z-index: 950;
-        .pop-up-content{
-            width: 100%;
-            top:0;
-            left: 0;
-            .form-title{
-                text-align: center;
-            }
-        }
-    }
-}
-
-.page-form{
-    .input-wrapper, select, .custom-file{
-        margin-bottom: 30px;
-    }
-    .custom-checkbox{
-        margin-bottom: 15px;
-        font-size: 13px;
-    }
-    textarea{
-        height: 100px;   
-    }
-    @media screen and (max-width: 992px){
-        .input-wrapper, select, .custom-file{
-            margin-bottom: 15px;
-        }
-    }
-}
+form{margin: 0;}

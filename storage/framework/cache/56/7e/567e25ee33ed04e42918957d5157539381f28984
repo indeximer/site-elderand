@@ -1,0 +1,55 @@
+1598306945a:1:{s:8:"form.htm";a:5:{s:8:"fileName";s:8:"form.htm";s:7:"content";s:1122:"<section class="content-section contact-section container-fluid" id="contact">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">v</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ 'Contact'|_ }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-30 text-center">
+                        {{ "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."|_ }}
+                    </p>
+                </div>
+            </div>  
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    {% component 'contactForm' %}
+                </div>
+            </div>            
+        </div>     
+    </div>
+</section>";s:5:"mtime";i:1596150593;s:6:"markup";s:1122:"<section class="content-section contact-section container-fluid" id="contact">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">v</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ 'Contact'|_ }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-30 text-center">
+                        {{ "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."|_ }}
+                    </p>
+                </div>
+            </div>  
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                    {% component 'contactForm' %}
+                </div>
+            </div>            
+        </div>     
+    </div>
+</section>";s:4:"code";N;}}

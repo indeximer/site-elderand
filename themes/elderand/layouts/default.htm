@@ -4,20 +4,22 @@ description = "Default layout"
 forceUrl = 1
 
 [alternateHrefLangElements]
+
+[Agent]
 ==
 {% component 'alternateHrefLangElements' %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>Elderand - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="author" content="OctoberCMS">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
-        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-        <link href="{{ 'assets/css/style.min.css'|theme }}" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="{{ 'assets/images/favicon.ico'|theme }}">
+        <link href="{{ 'assets/css/style.min.css'|theme }}?v={{ random() }}" rel="stylesheet">
         {% styles %}
     </head>
     <body>

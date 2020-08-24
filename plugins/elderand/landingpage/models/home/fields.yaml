@@ -55,17 +55,12 @@ tabs:
                         required: 1
                         type: richeditor
                     image:
-                        label: 'elderand.landingpage::lang.features_item_image'
+                        label: Image
                         mode: image
+                        span: auto
                         imageWidth: '200'
                         imageHeight: '200'
-                        useCaption: true
-                        thumbOptions:
-                            mode: crop
-                            extension: auto
-                        span: auto
-                        required: 1
-                        type: fileupload
+                        type: mediafinder
         galery_title:
             label: 'elderand.landingpage::lang.gallery_title'
             span: full

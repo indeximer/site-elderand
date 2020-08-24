@@ -122,4 +122,12 @@
   'Zainab\\SimpleContact\\Models\\Settings' => 'plugins\\zainab\\simplecontact\\models\\Settings.php',
   'laminsanneh\\flexicontact\\Plugin' => 'plugins\\laminsanneh\\flexicontact\\Plugin.php',
   'LaminSanneh\\FlexiContact\\Models\\Settings' => 'plugins\\laminsanneh\\flexicontact\\models\\Settings.php',
+  'rainlab\\translate\\Controllers\\messages' => 'plugins\\rainlab\\translate\\controllers\\messages.php',
+  'RainLab\\Translate\\Models\\MessageImport' => 'plugins\\rainlab\\translate\\models\\MessageImport.php',
+  'RainLab\\Translate\\Models\\MessageExport' => 'plugins\\rainlab\\translate\\models\\MessageExport.php',
+  'pikanji\\agent\\Plugin' => 'plugins\\pikanji\\agent\\Plugin.php',
+  'Pikanji\\Agent\\Components\\Agent' => 'plugins\\pikanji\\agent\\components\\Agent.php',
+  'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+  'JanVince\\SmallContactForm\\ReportWidgets\\NewMessage' => 'plugins\\janvince\\smallcontactform\\reportwidgets\\NewMessage.php',
+  'JanVince\\SmallContactForm\\Controllers\\Messages' => 'plugins\\janvince\\smallcontactform\\controllers\\Messages.php',
 );

@@ -1,0 +1,100 @@
+1598306945a:1:{s:16:"game-section.htm";a:5:{s:8:"fileName";s:16:"game-section.htm";s:7:"content";s:2025:"
+<section class="content-section highlight-section container-fluid" id="game">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">1</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ homeContent.highlight_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="container pt-60 description">
+            <div class="row justify-content-end mb-30">
+                <div class="col-12 col-lg-6 mb-30">
+                    {{ homeContent.highlight_description|raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row hero-title">
+        <div class="col-12">
+            <p class="page-title">
+                {{ homeContent.highlight_cta|raw }}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="orn-box d-none">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/{{  homeContent.highlight_video }}?autoplay=0&rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row made-with justify-content-center">
+        <div class="col-5 col-lg-auto">
+            <img class="mw-100" src="{{ 'assets/images/home/unity.png'|theme }}" alt="logo-unity">
+        </div>
+        <div class="col-5 col-lg-auto">
+            <img class="mw-100" src="{{ 'assets/images/home/esrb.png'|theme }}" alt="logo-unity">
+        </div>
+    </div>
+</section>";s:5:"mtime";i:1598304631;s:6:"markup";s:2023:"<section class="content-section highlight-section container-fluid" id="game">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">1</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ homeContent.highlight_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="container pt-60 description">
+            <div class="row justify-content-end mb-30">
+                <div class="col-12 col-lg-6 mb-30">
+                    {{ homeContent.highlight_description|raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row hero-title">
+        <div class="col-12">
+            <p class="page-title">
+                {{ homeContent.highlight_cta|raw }}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="orn-box d-none">
+                        <iframe class="video-frame" src="https://www.youtube.com/embed/{{  homeContent.highlight_video }}?autoplay=0&rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row made-with justify-content-center">
+        <div class="col-5 col-lg-auto">
+            <img class="mw-100" src="{{ 'assets/images/home/unity.png'|theme }}" alt="logo-unity">
+        </div>
+        <div class="col-5 col-lg-auto">
+            <img class="mw-100" src="{{ 'assets/images/home/esrb.png'|theme }}" alt="logo-unity">
+        </div>
+    </div>
+</section>";s:4:"code";N;}}

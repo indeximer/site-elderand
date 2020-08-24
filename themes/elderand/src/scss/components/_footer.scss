@@ -1,145 +1,24 @@
-.local-box{
-    background-color: $grey-3;
-    .text{
-        width: 100%;
-        flex-direction: column;
-        i{
-            font-size: 40px;
-            line-height: 1;
-            margin-bottom: 10px;
-        }
+.footer-logos{
+    padding: 65px 15px;
+    background-color: #0F131F;
+    @media screen and (max-width: 1050px){
+        .align-logos div{max-width: 180px;}
     }
-    .map-frame{
-        width: 100%;
-        height: 210px;
-    }
-    @media screen and (max-width: 992px){
-        flex-direction: column;
-        padding: 15px;
-    }
-}
-.working-hours{
-    .item{
-        align-items: flex-start;
-        i{
-            font-size: 46px;
-            margin-right: 20px;
+    @media screen and (max-width: 770px){
+        padding: 40px 30px 0 30px;
+        .align-logos{
+            justify-content: center !important;
+            div{margin-bottom: 40px;}
         }
     }
 }
-.footer-spacer{
-    width: 56px;
-    border-top: solid 2px $blue-3;
-    margin: 0 0 10px 0;
-}
-
 .footer{
-    padding-bottom: 86px;
-    background: url('../img/home/home-bg-footer.jpg') no-repeat;
-    background-size: cover;
-    a:hover{
-        opacity: 0.6;
-    }
-    .list-links{
-        li{
-            margin-bottom: 5px;
-        }
-        @media screen and (max-width: 992px){
-            margin-bottom: 30px;
-        }
-    }
-    .social-footer{
-        a{
-            margin-right: 20px;
-            font-size: 24px;
-        }
-    }
-    .copyright-container{
-        border-top: solid 1px rgba(190, 190, 190, 0.2);
-        padding: 20px 0;
-        .ibama{
-            img{margin-right: 20px;}
-        }
-        .logo-alpes{
-            img{margin-left: 10px;}
-        }
-        @media screen and (max-width: 992px){
-            text-align: center;
-            .ibama,
-            .logo-alpes{
-                justify-content: center !important;
-            }
-            .ibama{margin-bottom: 15px;}
-            .logo-alpes{margin-top: 15px;}
-        }
-    }
-    @media screen and (max-width: 992px){
-        padding-bottom: 76px;
-    }
-}
-
-.footer-fixed{
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 800;
-    box-shadow: 0px -3px 6px 0px rgba(0,0,0,0.16);
-    .btn-green-2{
-        width: 180px;
-        i{
-            font-size: 28px;
-            margin-right: 5px;
-        }
-        @media screen and (max-width: 992px){
-            background-color: transparent;
-            color: $brown-4;
-            font-size: 12px;
-            width: auto;
-            height: auto;
-            padding: 10px 20px;
-            i{
-                font-size: 22px;
-                color: $green-3;
-            }
-            &:hover{
-                background-color: transparent;
-            }
-        }
-    }
-    .footer-phone{
-        i{
-            font-size: 18px;
-            margin-right: 3px;
-        }
-        .sm{
-            font-size: 10px;
-            margin-bottom: 0;
-        }
-        .lg{
-            display: flex;
-            align-items: center;
-            @media screen and (min-width: 992px){
-                font-size: 12px;
-            }
-        }
+    padding: 30px 15px;
+    .social-item{
+        margin: 0 10px;
+        display: inline-flex;
         &:hover{
-            opacity: 0.7;
+            filter: brightness(2)
         }
-    }
-}
-
-@media screen and (max-width: 992px){
-    .footer-whatsapp{
-        display: none !important;
-    }
-}
-
-.btn-modal-favorites{
-    height: 34px;
-    font: 12px 'font-regular';
-    i{
-        font-size: 14px;
-        margin: 0 0 0 5px;
     }
 }

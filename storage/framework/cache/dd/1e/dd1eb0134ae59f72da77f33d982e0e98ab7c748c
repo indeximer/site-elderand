@@ -1,0 +1,39 @@
+1598306945a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:608:"title = "Home"
+meta_description = "Webpage for the Elderand Game."
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[contactForm]
+[builderDetails home]
+modelClass = "Elderand\LandingPage\Models\Home"
+identifierValue = 1
+modelKeyColumn = "id"
+displayColumn = "highlight_title"
+notFoundMessage = "Record not found"
+==
+{% set homeContent = home.record %}
+
+{% partial 'banner' %}
+
+{% partial 'game-section' homeContent=homeContent %}
+
+{% partial 'features' homeContent=homeContent %}
+
+{% partial 'screenshots' homeContent=homeContent %}
+
+{% partial 'blog-highlights' %}
+
+{% partial 'form' %}";s:5:"mtime";i:1598138901;s:6:"markup";s:283:"{% set homeContent = home.record %}
+
+{% partial 'banner' %}
+
+{% partial 'game-section' homeContent=homeContent %}
+
+{% partial 'features' homeContent=homeContent %}
+
+{% partial 'screenshots' homeContent=homeContent %}
+
+{% partial 'blog-highlights' %}
+
+{% partial 'form' %}";s:4:"code";N;s:5:"title";s:4:"Home";s:16:"meta_description";s:30:"Webpage for the Elderand Game.";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"contactForm";a:0:{}s:19:"builderDetails home";a:5:{s:10:"modelClass";s:32:"Elderand\LandingPage\Models\Home";s:15:"identifierValue";s:1:"1";s:14:"modelKeyColumn";s:2:"id";s:13:"displayColumn";s:15:"highlight_title";s:15:"notFoundMessage";s:16:"Record not found";}}}

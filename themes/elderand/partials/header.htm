@@ -14,18 +14,96 @@ pageNumber = "{{ :page }}"
 ==
 {% set menuItems = builderList.records %}
 
-{% component 'localePicker' %}
-<!-- Nav -->
-<section class="container-fluid">
-    <nav class="container">
-        <ul class="record-list">
+<section class="header container-fluid" id="header">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+</section>
+
+<section class="header fixed-header container-fluid">
+    <img class="logo" src="{{ 'assets/images/elderand-logo.svg'|theme }}" alt="elderand-logo">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+    <img class="orn-bar d-none d-lg-block" src="{{ 'assets/images/orns/orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+    <img class="orn-bar d-lg-none" src="{{ 'assets/images/orns/m-orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+</section>
+
+<div class="modal-overlay modal-menu" id="modal-menu">
+    <div class="pop-up-content text-center">
+        <button class="btn-close-modal"><i class="icon-close"></i></button>
+        <div class="content-section">
+            <div class="row orn-bar">
+                <div class="col-12 text-center color-white p-0">
+                    <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+                    <h1 class="section-title text-uppercase">Menu</h1>
+                </div>        
+            </div>
+        </div>
+        <ul class="modal-menu-wrapper">
             {% for menuItem in menuItems %}
-                <li>
-                    <a href="{{ 'home'|page }}{{ menuItem.link }}">
+                <li class="col-auto {{ menuItem.class }}">
+                    <a class="scroll-to btn-close-modal" data-scrollto="{{ menuItem.link }}">
                         {{ menuItem.title }}
                     </a>
                 </li>
             {% endfor %}
-        </ul>  
-    </nav>
-</section>
+        </ul>
+    </div>
+</div>

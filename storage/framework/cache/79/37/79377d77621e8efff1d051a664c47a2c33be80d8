@@ -1,0 +1,203 @@
+1598306945a:1:{s:10:"header.htm";a:7:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:4664:"[localePicker]
+forceUrl = 0
+
+[builderList]
+modelClass = "Elderand\LandingPage\Models\Menu"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsKeyColumn = "link"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set menuItems = builderList.records %}
+
+<section class="header container-fluid" id="header">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+</section>
+
+<section class="header fixed-header container-fluid">
+    <img class="logo" src="{{ 'assets/images/elderand-logo.svg'|theme }}" alt="elderand-logo">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+    <img class="orn-bar d-none d-lg-block" src="{{ 'assets/images/orns/orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+    <img class="orn-bar d-lg-none" src="{{ 'assets/images/orns/m-orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+</section>
+
+<div class="modal-overlay modal-menu" id="modal-menu">
+    <div class="pop-up-content text-center">
+        <button class="btn-close-modal"><i class="icon-close"></i></button>
+        <div class="content-section">
+            <div class="row orn-bar">
+                <div class="col-12 text-center color-white p-0">
+                    <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+                    <h1 class="section-title text-uppercase">Menu</h1>
+                </div>        
+            </div>
+        </div>
+        <ul class="modal-menu-wrapper">
+            {% for menuItem in menuItems %}
+                <li class="col-auto {{ menuItem.class }}">
+                    <a class="scroll-to btn-close-modal" data-scrollto="{{ menuItem.link }}">
+                        {{ menuItem.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>";s:5:"mtime";i:1598137850;s:6:"markup";s:4356:"{% set menuItems = builderList.records %}
+
+<section class="header container-fluid" id="header">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+</section>
+
+<section class="header fixed-header container-fluid">
+    <img class="logo" src="{{ 'assets/images/elderand-logo.svg'|theme }}" alt="elderand-logo">
+    <div class="main-menu-wrapper row align-items-center justify-content-between">
+        <div class="col d-xl-none">
+            <button class="btn-menu btn-open-modal" data-target="#modal-menu">
+                <i class="icon-menu"></i>
+            </button>
+        </div>
+        <div class="col d-none d-xl-flex">
+            <p class="bold mb-0">The Mercenary's tale.</p>
+        </div>
+        <nav class="col-auto d-none d-xl-flex">
+            <ul class="main-menu menu row text-uppercase font-regular font-16">
+                {% for menuItem in menuItems %}
+                    <li class="col-auto {{ menuItem.class }}">
+                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                            {{ menuItem.title }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="col locale-wrapper">
+            <i class="icon-language d-none"></i>
+            {{ form_open() }}
+                <select name="locale" data-request="onSwitchLocale" class="form-control custom-select select-locale d-none">
+                    {% for code, name in locales %}
+                        <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+                    {% endfor %}
+                </select>
+            {{ form_close() }}
+        </div>
+    </div>
+    <img class="orn-bar d-none d-lg-block" src="{{ 'assets/images/orns/orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+    <img class="orn-bar d-lg-none" src="{{ 'assets/images/orns/m-orn-fixed-bar.svg'|theme }}" alt="elderand-ornament">
+</section>
+
+<div class="modal-overlay modal-menu" id="modal-menu">
+    <div class="pop-up-content text-center">
+        <button class="btn-close-modal"><i class="icon-close"></i></button>
+        <div class="content-section">
+            <div class="row orn-bar">
+                <div class="col-12 text-center color-white p-0">
+                    <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+                    <h1 class="section-title text-uppercase">Menu</h1>
+                </div>        
+            </div>
+        </div>
+        <ul class="modal-menu-wrapper">
+            {% for menuItem in menuItems %}
+                <li class="col-auto {{ menuItem.class }}">
+                    <a class="scroll-to btn-close-modal" data-scrollto="{{ menuItem.link }}">
+                        {{ menuItem.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>";s:4:"code";N;s:12:"localePicker";a:1:{s:8:"forceUrl";s:1:"0";}s:11:"builderList";a:9:{s:10:"modelClass";s:32:"Elderand\LandingPage\Models\Menu";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:16:"detailsKeyColumn";s:4:"link";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

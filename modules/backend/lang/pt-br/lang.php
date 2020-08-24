@@ -277,6 +277,7 @@ return [
         'add' => 'Adicionar',
         'apply' => 'Aplicar',
         'cancel' => 'Cancelar',
+        'edit' => 'Editar',
         'close' => 'Fechar',
         'confirm' => 'Confirmar',
         'reload' => 'Recarregar',

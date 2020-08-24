@@ -1,11 +1,37 @@
-<div class="parallax-banner">
-    <img class="mw-100" src="{{ 'assets/images/parallax-banner/bg-deep-blue.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="7" src="{{ 'assets/images/parallax-banner/parallax-04.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="4" src="{{ 'assets/images/parallax-banner/fog-03.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="-2" src="{{ 'assets/images/parallax-banner/parallax-03.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="5" src="{{ 'assets/images/parallax-banner/fog-02.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="-4" src="{{ 'assets/images/parallax-banner/parallax-02.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="8" src="{{ 'assets/images/parallax-banner/fog-01.png'|theme }}" alt="img-banner-elderand">
-    <img class="mw-100 rellax" data-rellax-speed="0" src="{{ 'assets/images/parallax-banner/parallax-01.png'|theme }}" alt="img-banner-elderand">
 
+
+<div class="parallax-banner">
+    {% if Agent.isMobile()  %}
+    <img class="mobile-banner" data-rellax-speed="5" src="{{ 'assets/images/parallax-banner/m-banner.png'|theme }}" alt="img-banner-elderand">
+    <img class="mw-100 banner-logo" data-rellax-speed="7" src="{{ 'assets/images/elderand-logo.svg'|theme }}" alt="logo-elderand">
+    {% else %}
+        <img class="mw-100" src="{{ 'assets/images/parallax-banner/bg-deep-blue.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-11" src="{{ 'assets/images/parallax-banner/parallax-04.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-10" src="{{ 'assets/images/parallax-banner/fog-03.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-7" src="{{ 'assets/images/parallax-banner/parallax-03.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-9" src="{{ 'assets/images/parallax-banner/fog-02.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-5" src="{{ 'assets/images/parallax-banner/parallax-02.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="-7" src="{{ 'assets/images/parallax-banner/fog-01.png'|theme }}" alt="img-banner-elderand">
+        <img class="mw-100 rellax banner-logo" data-rellax-speed="-13" src="{{ 'assets/images/elderand-logo.svg'|theme }}" alt="logo-elderand">
+        <img class="mw-100 rellax" data-rellax-speed="0" src="{{ 'assets/images/parallax-banner/parallax-01.png'|theme }}" alt="img-banner-elderand">
+    {% endif %}
+
+    <div class="banner-content text-center">
+        <p class="color-white bold font-30 mb-20">
+            {{ 'Coming soon!'|_ }}
+        </p>
+        <div class="d-flex justify-content-center mb-20">
+            <a class="btn btn-primary" href="http>//steam.com" target="_blank">
+                <i class="icon-steam"></i>
+                Steam
+            </a>
+        </div>
+        <p class="color-white mb-20 d-none">
+            {{ 'Are you press?'|_ }} <a class="styled-link" href="http://google.com" target="_blank">{{ 'Press Kit'|_ }}</a>
+        </p>
+        <a class="scroll-to continue-link mb-0 text-uppercase font-12" data-scrollto="#game">
+            {{ 'Continue'|_ }} <br>
+            <i class="icon-arrow-down font-22"></i>
+        </a>
+    </div>
 </div>

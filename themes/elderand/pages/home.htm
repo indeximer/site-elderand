@@ -1,16 +1,27 @@
 title = "Home"
+meta_description = "Webpage for the Elderand Game."
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[contactForm]
+[builderDetails home]
+modelClass = "Elderand\LandingPage\Models\Home"
+identifierValue = 1
+modelKeyColumn = "id"
+displayColumn = "highlight_title"
+notFoundMessage = "Record not found"
 ==
+{% set homeContent = home.record %}
+
 {% partial 'banner' %}
-<section class="container">
-    <div class="page-header">
-        <h2>Overview <small>Basic concepts</small></h2>
-    </div>
-    <p>
-        This page demonstrates the basic CMS features.
-        Usually each page built with October is a combination of a layout, page, partials and content blocks,
-        although in simple cases you can just use a page without anything else.
-    </p>
-</div>
+
+{% partial 'game-section' homeContent=homeContent %}
+
+{% partial 'features' homeContent=homeContent %}
+
+{% partial 'screenshots' homeContent=homeContent %}
+
+{% partial 'blog-highlights' %}
+
+{% partial 'form' %}

@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'inova-ford';
-  src: url('../fonts/icons/inova-ford.eot?58616394');
-  src: url('../fonts/icons/inova-ford.eot?58616394#iefix') format('embedded-opentype'),
-        url('../fonts/icons/inova-ford.woff2?58616394') format('woff2'),
-        url('../fonts/icons/inova-ford.woff?58616394') format('woff'),
-        url('../fonts/icons/inova-ford.ttf?58616394') format('truetype'),
-        url('../fonts/icons/inova-ford.svg?58616394#inova-ford') format('svg');
+  font-family: 'icons-elderand';
+  src: url('../fonts/icons/icons-elderand.eot?58616394');
+  src: url('../fonts/icons/icons-elderand.eot?58616394#iefix') format('embedded-opentype'),
+        url('../fonts/icons/icons-elderand.woff2?58616394') format('woff2'),
+        url('../fonts/icons/icons-elderand.woff?58616394') format('woff'),
+        url('../fonts/icons/icons-elderand.ttf?58616394') format('truetype'),
+        url('../fonts/icons/icons-elderand.svg?58616394#icons-elderand') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
   line-height: 1;
 }
   [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "inova-ford";
+  font-family: "icons-elderand";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -28,41 +28,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
   
-.icon-left:before { content: '\e800'; } /* '' */
-.icon-like:before { content: '\e801'; } /* '' */
-.icon-like-active:before { content: '\e802'; } /* '' */
-.icon-locadora:before { content: '\e803'; } /* '' */
-.icon-menu:before { content: '\e804'; } /* '' */
-.icon-oferta:before { content: '\e805'; } /* '' */
-.icon-parceria-ford:before { content: '\e806'; } /* '' */
-.icon-pcd:before { content: '\e807'; } /* '' */
-.icon-pecas-footer:before { content: '\e808'; } /* '' */
-.icon-phone:before { content: '\e809'; } /* '' */
-.icon-phone_1:before { content: '\e80a'; } /* '' */
-.icon-pin:before { content: '\e80b'; } /* '' */
-.icon-pin-loja:before { content: '\e80c'; } /* '' */
-.icon-play:before { content: '\e80d'; } /* '' */
-.icon-plus:before { content: '\e80e'; } /* '' */
-.icon-preco-fixo:before { content: '\e80f'; } /* '' */
-.icon-produtor-rural:before { content: '\e810'; } /* '' */
-.icon-quilometragem:before { content: '\e811'; } /* '' */
-.icon-right:before { content: '\e812'; } /* '' */
-.icon-search:before { content: '\e813'; } /* '' */
-.icon-service-express:before { content: '\e814'; } /* '' */
-.icon-taxi:before { content: '\e815'; } /* '' */
-.icon-up:before { content: '\e816'; } /* '' */
-.icon-whatsapp:before { content: '\e817'; } /* '' */
-.icon-youtube:before { content: '\e818'; } /* '' */
-.icon-agendamento:before { content: '\e819'; } /* '' */
-.icon-aplicativo:before { content: '\e81a'; } /* '' */
-.icon-assistencia-footer:before { content: '\e81b'; } /* '' */
-.icon-cartao-fidelidade:before { content: '\e81c'; } /* '' */
-.icon-close:before { content: '\e81d'; } /* '' */
-.icon-close-form:before { content: '\e81e'; } /* '' */
-.icon-cnpj:before { content: '\e81f'; } /* '' */
-.icon-down:before { content: '\e820'; } /* '' */
-.icon-erase:before { content: '\e821'; } /* '' */
-.icon-face:before { content: '\e822'; } /* '' */
-.icon-ford-pass:before { content: '\e823'; } /* '' */
-.icon-ford-protect:before { content: '\e824'; } /* '' */
-.icon-insta:before { content: '\e825'; } /* '' */
+.icon-face:before { content: '\e800'; } /* '' */
+.icon-language:before { content: '\e801'; } /* '' */
+.icon-menu:before { content: '\e802'; } /* '' */
+.icon-share:before { content: '\e803'; } /* '' */
+.icon-steam:before { content: '\e804'; } /* '' */
+.icon-switch:before { content: '\e805'; } /* '' */
+.icon-twitter:before { content: '\e806'; } /* '' */
+.icon-whats:before { content: '\e807'; } /* '' */
+.icon-xbox:before { content: '\e808'; } /* '' */
+.icon-arrow-down:before { content: '\e809'; } /* '' */
+.icon-arrow-up:before { content: '\e80a'; } /* '' */
+.icon-close:before { content: '\e80b'; } /* '' */

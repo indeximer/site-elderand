@@ -283,6 +283,7 @@ return [
         'add' => 'Add',
         'apply' => 'Apply',
         'cancel' => 'Cancel',
+        'edit' => 'Edit',
         'close' => 'Close',
         'confirm' => 'Confirm',
         'reload' => 'Reload',

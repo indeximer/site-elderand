@@ -1,0 +1,79 @@
+1598306945a:1:{s:12:"features.htm";a:5:{s:8:"fileName";s:12:"features.htm";s:7:"content";s:1567:"{% set features = homeContent.features_items %}
+<section class="content-section features-section container-fluid" id="features">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">11</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ homeContent.features_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row hero-title">
+        <div class="col-12">
+            <p class="page-title">
+                {{ homeContent.features_cta|raw }}
+            </p>
+        </div>        
+    </div>
+
+    <div class="row">
+        <ul class="list-features container">
+            {% for feature in features %}
+            <li class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="orn-box img-wrapper">
+                        <img class="w-100" src="{{ feature.image|media }}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="text-box">
+                        <h2 class="color-white font-40 font-regular mb-30">{{ feature.title }}</h2>
+                        {{ feature.description|raw }}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>";s:5:"mtime";i:1596384377;s:6:"markup";s:1567:"{% set features = homeContent.features_items %}
+<section class="content-section features-section container-fluid" id="features">
+    <div class="row orn-bar">
+        <div class="col-12 text-center color-white p-0">
+            <p class="section-number font-regular">11</p>
+            <span class="section-dot"></span>
+            <img src="{{ 'assets/images/orns/orn-section.svg'|theme }}" alt="logo-ornament">
+            <h1 class="section-title text-uppercase">{{ homeContent.features_title }}</h1>
+            <span class="section-line"></span>
+        </div>        
+    </div>
+
+    <div class="row hero-title">
+        <div class="col-12">
+            <p class="page-title">
+                {{ homeContent.features_cta|raw }}
+            </p>
+        </div>        
+    </div>
+
+    <div class="row">
+        <ul class="list-features container">
+            {% for feature in features %}
+            <li class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="orn-box img-wrapper">
+                        <img class="w-100" src="{{ feature.image|media }}" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="text-box">
+                        <h2 class="color-white font-40 font-regular mb-30">{{ feature.title }}</h2>
+                        {{ feature.description|raw }}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>";s:4:"code";N;}}

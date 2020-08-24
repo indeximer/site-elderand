@@ -18,6 +18,7 @@ const files = {
         'src/js/vendors/jquery.min.js',
         'src/js/vendors/bootstrap.bundle.min.js',
         'src/js/vendors/rellax.min.js',
+        'src/js/vendors/jquery.fancybox.min.js',
         'src/js/**/*.js'
     ],
     imgPath: 'src/img',
