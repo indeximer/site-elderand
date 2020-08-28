@@ -15,12 +15,28 @@ forceUrl = 1
         <title>Elderand - {{ this.page.title }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
-        <meta name="author" content="OctoberCMS">
+        <meta name="author" content="Douglas Fortunato">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content="OctoberCMS">
+
+        <meta property="og:image" content="{{ 'assets/images/promo.png'|theme }}">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="576">
+        <meta property="og:type" content="website">
+
         <link rel="icon" type="image/x-icon" href="{{ 'assets/images/favicon.ico'|theme }}">
         <link href="{{ 'assets/css/style.min.css'|theme }}?v={{ random() }}" rel="stylesheet">
         {% styles %}
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176564639-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-176564639-1');
+        </script>
+
     </head>
     <body>
 

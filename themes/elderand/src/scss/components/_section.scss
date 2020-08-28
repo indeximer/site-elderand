@@ -133,12 +133,12 @@
             background-image: url('../images/bgs/m-faces.png');
         }
         .hero-title{
-            margin-bottom: -50px;
+            margin: 40px 0;
             @media screen and (max-width: 1050px){
-                margin-bottom: -30px;
+                margin-bottom: -30px
             }
             @media screen and (max-width: 770px){
-                margin: 40px -15px;
+                margin: 20px -15px;
             }
         }
         .list-features{
