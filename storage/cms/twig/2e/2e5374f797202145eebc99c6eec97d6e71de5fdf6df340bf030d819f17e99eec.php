@@ -92,11 +92,13 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
         <p class=\"color-white bold font-30 mb-20\">
             ";
         // line 19
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Coming soon!"]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Coming soon"]);
         echo "
         </p>
         <div class=\"d-flex justify-content-center mb-20\">
-            <a class=\"btn btn-primary\" href=\"http>//steam.com\" target=\"_blank\">
+            <a class=\"btn btn-primary\" href=\"#\" ";
+        // line 22
+        echo ">
                 <i class=\"icon-steam\"></i>
                 Steam
             </a>
@@ -132,7 +134,7 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
 
     public function getDebugInfo()
     {
-        return array (  115 => 31,  107 => 28,  95 => 19,  90 => 16,  85 => 14,  81 => 13,  77 => 12,  73 => 11,  69 => 10,  65 => 9,  61 => 8,  57 => 7,  52 => 6,  47 => 4,  42 => 3,  40 => 2,  37 => 1,);
+        return array (  117 => 31,  109 => 28,  101 => 22,  95 => 19,  90 => 16,  85 => 14,  81 => 13,  77 => 12,  73 => 11,  69 => 10,  65 => 9,  61 => 8,  57 => 7,  52 => 6,  47 => 4,  42 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -155,10 +157,10 @@ class __TwigTemplate_3c77872fb1b181a585e0c4d962314b0f651d04a9e1db4f0edf681622dc4
 
     <div class=\"banner-content text-center\">
         <p class=\"color-white bold font-30 mb-20\">
-            {{ 'Coming soon!'|_ }}
+            {{ 'Coming soon'|_ }}
         </p>
         <div class=\"d-flex justify-content-center mb-20\">
-            <a class=\"btn btn-primary\" href=\"http>//steam.com\" target=\"_blank\">
+            <a class=\"btn btn-primary\" href=\"#\" {# target=\"_blank\" #}>
                 <i class=\"icon-steam\"></i>
                 Steam
             </a>

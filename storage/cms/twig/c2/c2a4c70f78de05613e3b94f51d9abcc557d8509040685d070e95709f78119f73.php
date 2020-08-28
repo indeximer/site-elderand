@@ -53,7 +53,7 @@ class __TwigTemplate_a3eee78d1b79d6113b5198e251dc94555823ef276e7d21379b125bc847c
             <p class=\"color-white bold font-30 mb-30 text-center\">
                 ";
         // line 15
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Coming soon!"]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Coming soon"]);
         echo "
             </p>
         </div>        
@@ -92,7 +92,7 @@ class __TwigTemplate_a3eee78d1b79d6113b5198e251dc94555823ef276e7d21379b125bc847c
     <div class=\"row\">
         <div class=\"col-12\">
             <p class=\"color-white bold font-30 mb-30 text-center\">
-                {{ 'Coming soon!'|_ }}
+                {{ 'Coming soon'|_ }}
             </p>
         </div>        
     </div>

@@ -1,4 +1,4 @@
-1598306945a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:1928:"[builderList socialItems]
+1598655035a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:1928:"[builderList socialItems]
 modelClass = "Elderand\LandingPage\Models\Social"
 scope = "-"
 scopeValue = "{{ :scope }}"

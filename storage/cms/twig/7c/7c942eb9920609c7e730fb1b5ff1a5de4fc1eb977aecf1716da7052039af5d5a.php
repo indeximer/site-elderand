@@ -54,62 +54,81 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
         // line 8
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, false, 8), "meta_title", [], "any", false, false, false, 8), "html", null, true);
         echo "\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Douglas Fortunato\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
+
+        <meta property=\"og:image\" content=\"";
         // line 12
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/promo.png");
+        echo "\">
+        <meta property=\"og:image:type\" content=\"image/png\">
+        <meta property=\"og:image:width\" content=\"1024\">
+        <meta property=\"og:image:height\" content=\"576\">
+        <meta property=\"og:type\" content=\"website\">
+
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
+        // line 18
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.ico");
         echo "\">
         <link href=\"";
-        // line 13
+        // line 19
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/style.min.css");
         echo "?v=";
         echo twig_escape_filter($this->env, twig_random($this->env), "html", null, true);
         echo "\" rel=\"stylesheet\">
         ";
-        // line 14
+        // line 20
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 15
-        echo "    </head>
+        // line 21
+        echo "
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-176564639-1\"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-176564639-1');
+        </script>
+
+    </head>
     <body>
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 20
+        // line 36
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 21
+        // line 37
         echo "        </header>
 
         <!-- Content -->
         <main>
             ";
-        // line 25
+        // line 41
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 26
+        // line 42
         echo "        </main>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 30
+        // line 46
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 31
+        // line 47
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 34
+        // line 50
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/js/main.min.js");
         echo "\"></script>
         ";
-        // line 35
+        // line 51
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -120,11 +139,11 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 36
+        // line 52
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 37
+        // line 53
         echo "
     </body>
 </html>";
@@ -142,7 +161,7 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
 
     public function getDebugInfo()
     {
-        return array (  128 => 37,  124 => 36,  113 => 35,  109 => 34,  104 => 31,  100 => 30,  94 => 26,  92 => 25,  86 => 21,  82 => 20,  75 => 15,  72 => 14,  66 => 13,  62 => 12,  55 => 8,  51 => 7,  47 => 6,  41 => 2,  37 => 1,);
+        return array (  147 => 53,  143 => 52,  132 => 51,  128 => 50,  123 => 47,  119 => 46,  113 => 42,  111 => 41,  105 => 37,  101 => 36,  84 => 21,  81 => 20,  75 => 19,  71 => 18,  62 => 12,  55 => 8,  51 => 7,  47 => 6,  41 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -155,12 +174,28 @@ class __TwigTemplate_7c041791f02b4c632d5e92867f3c0ebd17e57b24d404a637358ae6a2b11
         <title>Elderand - {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Douglas Fortunato\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-        <meta name=\"generator\" content=\"OctoberCMS\">
+
+        <meta property=\"og:image\" content=\"{{ 'assets/images/promo.png'|theme }}\">
+        <meta property=\"og:image:type\" content=\"image/png\">
+        <meta property=\"og:image:width\" content=\"1024\">
+        <meta property=\"og:image:height\" content=\"576\">
+        <meta property=\"og:type\" content=\"website\">
+
         <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ 'assets/images/favicon.ico'|theme }}\">
         <link href=\"{{ 'assets/css/style.min.css'|theme }}?v={{ random() }}\" rel=\"stylesheet\">
         {% styles %}
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-176564639-1\"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-176564639-1');
+        </script>
+
     </head>
     <body>
 

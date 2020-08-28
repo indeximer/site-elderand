@@ -54,23 +54,24 @@ class __TwigTemplate_0487985a71f2c0f9b158830559729e12f88580e155bac6c78d5b47a9f74
     <div class=\"row\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-12\">
-                    <p class=\"mb-30 text-center\">
+                <div class=\"col-12 text-center\">
+                    <p>
                         ";
         // line 17
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Lorem ipsum dolor sit amet, consetetur sadipscing elitr."]);
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Reach us, we love to make new friends"]);
         echo "
                     </p>
+                    <p class=\"mb-30\">contact@elderand.com</p>
                 </div>
             </div>  
             <div class=\"row justify-content-center\">
                 <div class=\"col-12 col-lg-6\">
                     ";
-        // line 23
+        // line 24
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contactForm"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 24
+        // line 25
         echo "                </div>
             </div>            
         </div>     
@@ -90,7 +91,7 @@ class __TwigTemplate_0487985a71f2c0f9b158830559729e12f88580e155bac6c78d5b47a9f74
 
     public function getDebugInfo()
     {
-        return array (  74 => 24,  70 => 23,  61 => 17,  48 => 7,  44 => 6,  37 => 1,);
+        return array (  75 => 25,  71 => 24,  61 => 17,  48 => 7,  44 => 6,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -109,10 +110,11 @@ class __TwigTemplate_0487985a71f2c0f9b158830559729e12f88580e155bac6c78d5b47a9f74
     <div class=\"row\">
         <div class=\"container\">
             <div class=\"row\">
-                <div class=\"col-12\">
-                    <p class=\"mb-30 text-center\">
-                        {{ \"Lorem ipsum dolor sit amet, consetetur sadipscing elitr.\"|_ }}
+                <div class=\"col-12 text-center\">
+                    <p>
+                        {{ \"Reach us, we love to make new friends\"|_ }}
                     </p>
+                    <p class=\"mb-30\">contact@elderand.com</p>
                 </div>
             </div>  
             <div class=\"row justify-content-center\">
