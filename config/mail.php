@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'postmaster@elderand.com', 'name' => 'Elderand - Site'],
+    'from' => ['address' => 'contato@elderand.com', 'name' => 'Elderand - Site'],
 
     /*
     |--------------------------------------------------------------------------
