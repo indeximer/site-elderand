@@ -1,4 +1,4 @@
-1598655034a:1:{s:10:"banner.htm";a:5:{s:8:"fileName";s:10:"banner.htm";s:7:"content";s:2478:"
+1598656923a:1:{s:10:"banner.htm";a:5:{s:8:"fileName";s:10:"banner.htm";s:7:"content";s:2478:"
 
 <div class="parallax-banner">
     {% if Agent.isMobile()  %}

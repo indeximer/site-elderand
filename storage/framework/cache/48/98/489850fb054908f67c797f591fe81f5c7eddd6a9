@@ -1,4 +1,4 @@
-1598655034a:1:{s:12:"features.htm";a:5:{s:8:"fileName";s:12:"features.htm";s:7:"content";s:1567:"{% set features = homeContent.features_items %}
+1598656923a:1:{s:12:"features.htm";a:5:{s:8:"fileName";s:12:"features.htm";s:7:"content";s:1567:"{% set features = homeContent.features_items %}
 <section class="content-section features-section container-fluid" id="features">
     <div class="row orn-bar">
         <div class="col-12 text-center color-white p-0">
