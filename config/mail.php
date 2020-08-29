@@ -68,7 +68,7 @@ return [
     |
     */
 
-    'encryption' => 'tls',
+    'encryption' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'username' => 'contato@elderand.com',
+    'username' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ return [
     |
     */
 
-    'password' => 'elderand2021*',
+    'password' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,6 +106,14 @@ return [
     | been provided here, which will work well on most of your systems.
     |
     */
+
+    'stream' => [
+        'ssl' => [
+            'allow_self_signed' => true,
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+        ],
+    ],
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
