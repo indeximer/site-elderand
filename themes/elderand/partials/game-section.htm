@@ -41,11 +41,47 @@
     </div>
 
     <div class="row made-with justify-content-center">
-        <div class="col-5 col-lg-auto">
-            <img class="mw-100" src="{{ 'assets/images/home/unity.png'|theme }}" alt="logo-unity">
-        </div>
-        <div class="col-5 col-lg-auto">
-            <img class="mw-100" src="{{ 'assets/images/home/esrb.png'|theme }}" alt="logo-unity">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 text-center">
+                    <h2 class="color-white font-40 font-regular mb-20">{{ 'Join the Cult?'|_ }}</h2>
+                    <p class="mb-30">
+                        {{ "we'll send you Elderand's news, offers, magical rings and fireswords! Enter your e-mail address below to sign up."|_ }}
+                    </p>
+                </div>
+            </div>
+                
+            <!-- Begin Mailchimp Signup Form -->
+            <form 
+                action="https://elderand.us7.list-manage.com/subscribe/post?u=1c098bfad3a75363e867af3f4&amp;id=75e5d070c6"
+                method="post" id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate row justify-content-center main-form newsLetter-form"
+                target="_blank"
+            >
+                <div class="col col-lg-4 pr-0">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" required>
+                    </div> 
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1c098bfad3a75363e867af3f4_75e5d070c6" tabindex="-1" value=""></div>
+                
+                <div class="col-auto col-lg-2 pl-0">
+                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary w-100">EMBRACE</button>
+                </div>
+            </form>
+            <!--End mc_embed_signup-->
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 text-center">
+                    <p class="mb-30 color-white">
+                        {{ "You can also join our"|_ }}
+                        <a class="styled-link" href="" target="_blank">{{ "discord community"|_ }}</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>

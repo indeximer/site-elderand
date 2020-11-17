@@ -56,6 +56,23 @@
     .btn-submit-wrapper{
         text-align: center;
     }
+    &.newsLetter-form{
+        .form-group{
+            margin-right: -1px;
+            .form-control{
+                border-right: none;
+                height: 56px;
+            }
+        }        
+        .btn{
+            height: 56px;
+            @media screen and (max-width: 1050px){
+                height: 56px;
+                font-size: 18px;
+                padding: 0 20px;
+            }
+        }
+    }
 }
 .form-control.is-invalid, .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus{
     border-color: $ruby-dragon;
