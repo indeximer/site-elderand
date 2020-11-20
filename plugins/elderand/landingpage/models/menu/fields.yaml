@@ -11,3 +11,7 @@ fields:
         label: Class
         span: auto
         type: text
+    target:
+        label: Target
+        span: auto
+        type: text

@@ -28,7 +28,7 @@ pageNumber = "{{ :page }}"
             <ul class="main-menu menu row text-uppercase font-regular font-16">
                 {% for menuItem in menuItems %}
                     <li class="col-auto {{ menuItem.class }}">
-                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                        <a class="scroll-to" href="{{ menuItem.link }}" target="{{ menuItem.target }}">
                             {{ menuItem.title }}
                         </a>
                     </li>
@@ -63,7 +63,7 @@ pageNumber = "{{ :page }}"
             <ul class="main-menu menu row text-uppercase font-regular font-16">
                 {% for menuItem in menuItems %}
                     <li class="col-auto {{ menuItem.class }}">
-                        <a class="scroll-to" data-scrollto="{{ menuItem.link }}">
+                        <a class="scroll-to" href="{{ menuItem.link }}" target="{{ menuItem.target }}">
                             {{ menuItem.title }}
                         </a>
                     </li>
@@ -99,7 +99,7 @@ pageNumber = "{{ :page }}"
         <ul class="modal-menu-wrapper">
             {% for menuItem in menuItems %}
                 <li class="col-auto {{ menuItem.class }}">
-                    <a class="scroll-to btn-close-modal" data-scrollto="{{ menuItem.link }}">
+                    <a class="scroll-to btn-close-modal" href="{{ menuItem.link }}" target="{{ menuItem.target }}">
                         {{ menuItem.title }}
                     </a>
                 </li>

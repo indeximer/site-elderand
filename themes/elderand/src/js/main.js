@@ -54,15 +54,17 @@ $('.pop-up-content .btn-privacy').on('click', function(){
 
 // menu
 $('.scroll-to').on('click', function(e){
-    e.preventDefault()
+    if($(this).attr('target') !== '_blank'){
+        e.preventDefault()
 
-    const threshhold = isMobile() ? 110 : 160
-    const target = $(this).data('scrollto')
-    const targetScroll = $(target).offset().top - threshhold
-
-    $('html, body').animate({
-        scrollTop: targetScroll
-    }, 800);
+        const threshhold = isMobile() ? 110 : 160
+        const target = $(this).attr('href')
+        const targetScroll = $(target).offset().top - threshhold
+    
+        $('html, body').animate({
+            scrollTop: targetScroll
+        }, 800);
+    }    
 })
 
 function addClass(el) {
